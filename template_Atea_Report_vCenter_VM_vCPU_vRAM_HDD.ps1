@@ -1,4 +1,14 @@
-﻿(Get-Culture).NumberFormat.NumberDecimalSeparator = '.'
+#Käesolev skript on paigaldatud Atea AS-i poolt lepinguliste raporteerimiskohustuste täitmiseks.
+#Kontaktid
+#E-mail: hooldus@atea.ee
+#Telefon: +372 610 5924
+#
+#This script is put in place and maintained by Atea AS to fulfill obligations taken by contract.
+#Contacts
+#E-mail: service@atea.ee
+#Phone: +372 610 5924
+
+(Get-Culture).NumberFormat.NumberDecimalSeparator = '.'
 
 $vCenterName = "vCenter_server_name"
 
