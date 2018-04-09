@@ -14,7 +14,7 @@ $smtp = "smtp_server"
 $from_address = "from@aadress.ee"
 $to_address = "to@aadress.ee"
 
-#Raporteeritavate serite nimekirja faili esimene rida peab olema päisena (header) kujul
+#Raporteeritavate servite nimekirja faili esimene rida peab olema päisena (header) kujul
 #"Server_name", "SysAidCI_vCPU", "SysAidCI_vRAM", "SysAidCI_HDD"
 #järgmised read päris serverid
 $InFile = "Atea_Report_vCenter_VM_vCPU_vRAM_HDD_server_list.txt"
