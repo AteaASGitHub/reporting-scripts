@@ -1,6 +1,10 @@
 ﻿(Get-Culture).NumberFormat.NumberDecimalSeparator = '.'
 
-$vCenterName = "servername"
+$vCenterName = "vCenter_server_name"
+
+#https://communities-gbot.vmware.com/thread/537366
+#Kui konto parool muutub, siis tuleb uus fail luua käsuga
+#Get-Credential | Export-Clixml [scriptsPath]\Credentials\[username].clixml
 Connect-VIServer $vCenterName -Credential (Import-clixml "useraccount.clixml")
 
 
