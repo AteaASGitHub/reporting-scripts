@@ -72,7 +72,7 @@ function NumberOfProvisionedSpace {
 
 
 foreach ($element in $VirtualMachines) {
-	NumberOfCPUs $element.Server_name $element.SysAidCI_vCPU
+    NumberOfCPUs $element.Server_name $element.SysAidCI_vCPU
     NumberOfRAM $element.Server_name $element.SysAidCI_vRAM
     NumberOfProvisionedSpace $element.Server_name $element.SysAidCI_HDD
 }
