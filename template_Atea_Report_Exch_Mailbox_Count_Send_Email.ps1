@@ -1,4 +1,4 @@
-#K‰esolev skript on paigaldatud Atea AS-i poolt lepinguliste raporteerimiskohustuste t‰itmiseks.
+#K√§esolev skript on paigaldatud Atea AS-i poolt lepinguliste raporteerimiskohustuste t√§itmiseks.
 #Kontaktid
 #E-mail: hooldus@atea.ee
 #Telefon: +372 610 5924
@@ -11,7 +11,7 @@
 $month = Get-Date -format Y
 $SysAidCI_asutused1 = 0000
 $max_asutused1 = Get-Content "c:\scripts\template_Atea_Report_Exch_Mailbox_Count_asutused1.txt.txt" | Measure-Object -max -min -ave | Select-Object maximum,minimum,average
-$email_koolid = @{
+$email_asutused1 = @{
 From = "from@aadress.ee"
 To = "to@aadress.ee"
 Subject = "Mailbox Enabled Users Count asutused1 $month"
@@ -22,7 +22,7 @@ send-mailmessage @email_asutused1
 Clear-Content "c:\scripts\template_Atea_Report_Exch_Mailbox_Count_asutused1.txt.txt" 
 
 $SysAidCI_asutused3 = 0001
-$max_lasteaiad = Get-Content "c:\scripts\template_Atea_Report_Exch_Mailbox_Count_asutused3.txt" | Measure-Object -max -min -ave | Select-Object maximum,minimum,average
+$max_asutused3 = Get-Content "c:\scripts\template_Atea_Report_Exch_Mailbox_Count_asutused3.txt" | Measure-Object -max -min -ave | Select-Object maximum,minimum,average
 $email_asutused3 = @{
 From = "from@aadress.ee"
 To = "to@aadress.ee"
