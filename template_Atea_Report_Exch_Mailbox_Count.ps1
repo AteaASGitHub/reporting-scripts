@@ -1,4 +1,4 @@
-#K‰esolev skript on paigaldatud Atea AS-i poolt lepinguliste raporteerimiskohustuste t‰itmiseks.
+#K√§esolev skript on paigaldatud Atea AS-i poolt lepinguliste raporteerimiskohustuste t√§itmiseks.
 #Kontaktid
 #E-mail: hooldus@atea.ee
 #Telefon: +372 610 5924
