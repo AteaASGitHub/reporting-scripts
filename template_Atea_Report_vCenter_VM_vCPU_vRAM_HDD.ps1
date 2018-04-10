@@ -36,12 +36,12 @@ function NumberOfCPUs {
     $vm = $vms | Where-Object {$_.Name -Match $vmName}
     $Count = [math]::round($vm.Config.Hardware.NumCPU, 4)
     $email_CPUs = @{
-    From = $from_address
-    To = $to_address
-    Subject = "$vmName number of vCPUs $month"
-    SMTPServer = $smtp
-    Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
-    Encoding   = New-Object System.Text.UTF8Encoding
+        From = $from_address
+        To = $to_address
+        Subject = "$vmName number of vCPUs $month"
+        SMTPServer = $smtp
+        Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
+        Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_CPUs
 }
@@ -52,12 +52,12 @@ function NumberOfRAM {
     $vm = $vms | Where-Object {$_.Name -Match $vmName}
     $Count = [math]::round($vm.MemoryGB, 4)
     $email_RAM = @{
-    From = $from_address
-    To = $to_address
-    Subject = "$vmName number of vRAM $month"
-    SMTPServer = $smtp
-    Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
-    Encoding   = New-Object System.Text.UTF8Encoding
+        From = $from_address
+        To = $to_address
+        Subject = "$vmName number of vRAM $month"
+        SMTPServer = $smtp
+        Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
+        Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_RAM
 }
@@ -68,12 +68,12 @@ function NumberOfProvisionedSpace {
     $vm = $vms | Where-Object {$_.Name -Match $vmName}
     $Count = [math]::round($vm.ProvisionedSpaceGB, 4)
     $email_HDD = @{
-    From = $from_address
-    To = $to_address
-    Subject = "$vmName number of HDD $month"
-    SMTPServer = $smtp
-    Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
-    Encoding   = New-Object System.Text.UTF8Encoding
+        From = $from_address
+        To = $to_address
+        Subject = "$vmName number of HDD $month"
+        SMTPServer = $smtp
+        Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $Count"
+        Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_HDD
 }
