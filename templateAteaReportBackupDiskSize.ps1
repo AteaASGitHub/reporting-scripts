@@ -8,6 +8,7 @@
 #E-mail: service@atea.ee
 #Phone: +372 610 5924
 
+(Get-Culture).NumberFormat.NumberDecimalSeparator = '.'
 $m_y = Get-Date -format Y
 $SysAidCI = "ID number"
 $used = Get-PSDrive E | Select-Object -ExpandProperty used
