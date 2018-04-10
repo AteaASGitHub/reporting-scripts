@@ -8,6 +8,8 @@
 #E-mail: service@atea.ee
 #Phone: +372 610 5924
 
+add-pssnapin VMware.VimAutomation.Core
+
 (Get-Culture).NumberFormat.NumberDecimalSeparator = '.'
 
 $vCenterName = "vCenter_server_name"
