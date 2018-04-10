@@ -12,9 +12,12 @@
 
 $vCenterName = "vCenter_server_name"
 
-#https://communities-gbot.vmware.com/thread/537366
-#Kui konto parool muutub, siis tuleb uus fail luua käsuga
-#Get-Credential | Export-Clixml [scriptsPath]\Credentials\[username].clixml
+#https://www.pdq.com/blog/secure-password-with-powershell-encrypting-credentials-part-2/
+#Kui konto parool muutub, siis tuleb uued failid luua. Vt. skripte
+#Atea_Report_Creating AES key with random data and export to file.ps1
+#Atea_Report_Creating SecureString object.ps1
+#Atea_Report_Creating PSCredential object.ps1
+
 Connect-VIServer $vCenterName -Credential (Import-clixml "useraccount.clixml")
 
 
