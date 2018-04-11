@@ -55,6 +55,7 @@ function NumberOfCPUs {
         Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_CPUs
+    Start-Sleep -seconds 5
 }
 
 function NumberOfRAM {
@@ -71,6 +72,7 @@ function NumberOfRAM {
         Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_RAM
+    Start-Sleep -seconds 5
 }
 
 function NumberOfProvisionedSpace {
@@ -87,6 +89,7 @@ function NumberOfProvisionedSpace {
         Encoding   = New-Object System.Text.UTF8Encoding
     }
     send-mailmessage @email_HDD
+    Start-Sleep -seconds 5
 }
 
 
