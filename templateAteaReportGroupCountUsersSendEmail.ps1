@@ -19,7 +19,7 @@ $email = @{
     Subject = "Kliendi nimi grupi nimi User count, $m_y"
     SMTPServer = "SMTPserver"
     Body = "SysAidCI: $SysAidCI" + "`r`n" + "Count: $max"
-    Encoding   = New-Object System.Text.UTF8Encoding
+    Encoding = New-Object System.Text.UTF8Encoding
 }
 
 send-mailmessage @email
