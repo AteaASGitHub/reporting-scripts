@@ -9,6 +9,10 @@
 #Phone: +372 610 5924
 
 $group = Get-ADGroup -identity "grupinimiAD-s"
-$countUser = (Get-ADGroupMember $group.DistinguishedName).count 
-add-content "c:\scripts\AteaReportGroupCountUsers.txt" $countUser
-
+if ([array]$countUser = (Get-ADGroupMember $group.DistinguishedName)) {
+   $countTot = $countUser.count
+   } 
+else {
+    $countTot = 0
+    }
+add-content "c:\scripts\AteaReportGroupCountUsers.txt" $countTot
